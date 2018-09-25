@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <ul>
+      <li>TRUMP</li>
+      <li>Putin</li>
+      <li>DeVos</li>
+      <li>Kavenaugh</li>
+    </ul>
+    
+    <button onclick="removeItem()">Kill</button>
+    
+    <script>
+      function removeItem() {
+        var eliminate = document.getElementsByTagName('li')[0];
+        var container = eliminate.parentNode;
+        container.removeChild(eliminate);
+      }
+      
+    </script>
+  </body>
+  
+</html>
