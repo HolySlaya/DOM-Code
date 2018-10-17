@@ -9,12 +9,19 @@
 
     <script>
       function list() {
+        //get value and save as usersChoice
         var usersChoice = document.getElementById('usersChoice').value;
+        //clear input box
         document.getElementById('usersChoice').value = "";
+        //create new list item and save as newList
         var newList = document.createElement('li');
+        //create text node and take value from newList and save it as newText
         var newText = document.createTextNode(usersChoice);
+        //attack newText to newList
         newList.appendChild(newText);
+        //find first ordered list in HTML document
         var position = document.getElementsByTagName('ol')[0];
+        //take position and attach it to newlist
         position.appendChild(newList);
         
       }
